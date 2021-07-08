@@ -30,7 +30,7 @@ a {
 /* HEADER */
 
 .header {
-    background: url(image/banner.jpg);
+    background: url(../image/banner.jpg);
     width: 100vw;
     height: 70vh;
     background-repeat: no-repeat;
@@ -397,7 +397,7 @@ a {
 /* FOOTER */
 
 .footer {
-    background: url(image/footer_new.png);
+    background: url(../image/footer_new.png);
     background-color: #EFEFEF;
     height: 1000px;
     background-repeat: no-repeat;
@@ -503,7 +503,7 @@ a {
 
 @media (max-width: 1024px) {
     .header {
-        background: url(image/banner_1024.png);
+        background: url(../image/banner_1024.png);
         background-repeat: no-repeat;
         height: 750px;
     }
@@ -537,7 +537,7 @@ a {
         margin: 0 auto;
     }
     .footer {
-        background: url(image/footer_new_mb.png);
+        background: url(../image/footer_new_mb.png);
         background-repeat: no-repeat;
         background-color: #EFEFEF;
     }
@@ -683,7 +683,7 @@ a {
         left: 43%;
     }
     .header {
-        background: url(image/banner_mb.png);
+        background: url(../image/banner_mb.png);
         background-repeat: no-repeat;
         height: 350px;
     }
