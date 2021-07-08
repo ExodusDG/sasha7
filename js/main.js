@@ -50,7 +50,7 @@ function randNumber() {
 }
 
 $.each(activeNumbers, function(key, value) {
-    $("<img>").attr('src', 'image/cards/%23' + value + '.png').attr('alt', 'card').appendTo('.not_cards'); //добавляем изображение;
+    $("<img>").attr('src', 'image/cards/img_' + value + '.png').attr('alt', 'card').appendTo('.not_cards'); //добавляем изображение;
 });
 
 setInterval(popupRandNumber, reloadTime)
@@ -80,7 +80,7 @@ function popupRandNumber() {
 function spawnStart() {
     $.each(popupArray, function(key, value) {
         $("<div>", { id: value, alt: 'card' }).appendTo('.popup__notify');
-        $("<img>").attr('src', 'image/cards/%23' + value + '.png').appendTo('#' + value); //добавляем изображение;
+        $("<img>").attr('src', 'image/cards/img_' + value + '.png').appendTo('#' + value); //добавляем изображение;
         $(`<div class="popup_close">X</div>`).appendTo('#' + value);
         var imgWidth = $('.popup__notify > div > img').width()
         $('.popup__notify > div').css('width', imgWidth + 'px')
