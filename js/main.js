@@ -93,3 +93,29 @@ function spawnStart() {
         });
     })
 }
+
+/* FAQ */
+
+$('.different__body_item').click(function() {
+    currentFAQ = $(this).find('.different__body_item_desc');
+    currentFAQ.toggleClass('faq_show');
+    currentFAQ.toggleClass('faq_active')
+});
+
+
+$(window).scroll(function() {
+    if ($(document).scrollTop() > 300) { //прокручиваем страницу вниз на 100px
+        $('.footer__body_bottom').css('transform', 'translate3d(0, 0%, 0)')
+        $('.popup__notify').css('bottom', '14%');
+
+        if (bodyWidth < 1024) {
+            $('.popup__notify').css('bottom', '12%');
+        }
+        if (bodyWidth < 490) {
+            $('.popup__notify').css('bottom', '20%');
+        }
+    } else { //если меньше чем на 100px
+        $('.footer__body_bottom').css('transform', 'translate3d(0, 110%, 0)')
+        $('.popup__notify').css('bottom', '2%');
+    }
+});
