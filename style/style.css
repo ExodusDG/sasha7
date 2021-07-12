@@ -148,8 +148,8 @@ a {
 .adv__list_header {
     display: flex;
     justify-content: space-between;
-    width: 100%;
-    left: 0%;
+    width: 110%;
+    left: -5%;
     position: relative;
     margin-bottom: 40px;
 }
