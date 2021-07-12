@@ -73,9 +73,11 @@ a {
     font-size: 46px;
     color: black;
     margin-top: 15px;
+    letter-spacing: 25px;
 }
 
 .header__body_ashley span {
+    letter-spacing: 0px;
     text-decoration: underline;
 }
 
@@ -103,19 +105,29 @@ a {
     color: white;
     padding: 20px 40px;
     cursor: pointer;
-}
-
-.header_button:hover {
-    transition: 0.3s;
-    -webkit-box-shadow: 0px 0px 52px 35px rgba(237, 92, 130, 0.2);
-    -moz-box-shadow: 0px 0px 52px 35px rgba(237, 92, 130, 0.2);
-    box-shadow: 0px 0px 52px 35px rgba(237, 92, 130, 0.2);
+    overflow: hidden;
+    position: relative;
 }
 
 .woman__banner {
     width: 100vw;
     max-width: 1920px;
     margin-top: 80px;
+}
+
+.button_mask {
+    position: absolute;
+    background: #ffcfdb;
+    width: 30px;
+    height: 160%;
+    left: 0;
+    top: -20px;
+    opacity: 0.6;
+    transform: skewX(-15deg) translateX(-100px);
+    z-index: 999;
+    position: absolute;
+    transition: 0.6s;
+    filter: blur(5px);
 }
 
 
@@ -394,10 +406,29 @@ a {
     transition: 0.5s;
 }
 
+.register_blinks {
+    margin-left: 5px;
+    animation-name: reg_blinks;
+    animation: reg_blinks 1s cubic-bezier(0, -0.04, 0.54, 1.23) infinite;
+}
+
+@keyframes reg_blinks {
+    0% {
+        transform: translate3d(0px, 0, 0);
+    }
+    50% {
+        transform: translate3d(3px, 0, 0);
+    }
+    100% {
+        transform: translate3d(0px, 0, 0);
+    }
+}
+
 
 /* MESSAGES */
 
 .messages {
+    background: #EFEFEF;
     padding-top: 40px;
     padding-bottom: 40px;
 }
@@ -571,6 +602,7 @@ a {
     margin-bottom: 30px;
     background: #ED5C82;
     border: none;
+    overflow: hidden;
     font-size: 24px;
     border-radius: 50px;
     color: white;
@@ -802,7 +834,7 @@ a {
         width: 30%;
     }
     .msg__image {
-        width: 100%;
+        width: 100px;
     }
     .msg__text {
         font-size: 20px;
@@ -1037,6 +1069,9 @@ a {
     }
     .header__body_ashley {
         font-size: 36px;
+    }
+    .header__body_ashley {
+        letter-spacing: 10px;
     }
     .header__body_join {
         font-size: 20px;

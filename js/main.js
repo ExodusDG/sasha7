@@ -6,6 +6,22 @@ if (bodyWidth < 490) {
     $('.woman__banner').attr('src', 'image/women_banner_mb.png')
 }
 
+var cssActive = {
+    'transform': 'skewX(-15deg) translateX(400px)'
+}
+var cssInactive = {
+    'transform': 'skewX(-15deg) translateX(-100px)'
+}
+
+setInterval(() => {
+    $('.button_mask').css(cssActive)
+
+    setTimeout(() => {
+        $('.button_mask').css(cssInactive)
+    }, 4000);
+}, 6000);
+
+
 /* SMOOTH SCROLL */
 
 var $page = $('html, body');
