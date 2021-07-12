@@ -2,9 +2,8 @@
 
 var bodyWidth = $(window).width();
 
-if (bodyWidth < 1025) {
-    $('.not_image').attr('src', 'image/notification_mb.png').css('width', '50%');
-    $('.msg__body_image > img').attr('src', 'image/chat_mb.png')
+if (bodyWidth < 490) {
+    $('.woman__banner').attr('src', 'image/women_banner_mb.png')
 }
 
 /* SMOOTH SCROLL */
@@ -106,13 +105,13 @@ $('.different__body_item').click(function() {
 $(window).scroll(function() {
     if ($(document).scrollTop() > 300) { //прокручиваем страницу вниз на 100px
         $('.footer__body_bottom').css('transform', 'translate3d(0, 0%, 0)')
-        $('.popup__notify').css('bottom', '14%');
+        $('.popup__notify').css('bottom', '18%');
 
         if (bodyWidth < 1024) {
-            $('.popup__notify').css('bottom', '12%');
+            $('.popup__notify').css('bottom', '14%');
         }
         if (bodyWidth < 490) {
-            $('.popup__notify').css('bottom', '20%');
+            $('.popup__notify').css('bottom', '24%');
         }
     } else { //если меньше чем на 100px
         $('.footer__body_bottom').css('transform', 'translate3d(0, 110%, 0)')
