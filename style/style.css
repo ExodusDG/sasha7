@@ -43,9 +43,10 @@ a {
 }
 
 .header__body_top {
-    width: 100%;
+    width: 90%;
     position: relative;
     left: 0%;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
 }
@@ -61,7 +62,7 @@ a {
 
 .header__body_desc {
     margin-top: 15px;
-    font-size: 50px;
+    font-size: 40px;
     font-family: 'Playfair Display', serif;
     font-style: italic;
     font-weight: 600;
@@ -70,7 +71,7 @@ a {
 
 .header__body_ashley {
     font-weight: 400;
-    font-size: 46px;
+    font-size: 36px;
     color: black;
     margin-top: 15px;
     letter-spacing: 25px;
@@ -86,7 +87,7 @@ a {
     font-weight: 400;
     color: black;
     margin-top: 15px;
-    font-size: 34px;
+    font-size: 30px;
     margin-bottom: 10px;
 }
 
@@ -100,10 +101,10 @@ a {
     margin-top: 30px;
     background: #ED5C82;
     border: none;
-    font-size: 24px;
+    font-size: 22px;
     border-radius: 50px;
     color: white;
-    padding: 20px 40px;
+    padding: 15px 35px;
     cursor: pointer;
     overflow: hidden;
     position: relative;
@@ -512,7 +513,7 @@ a {
 .text {
     padding-bottom: 15vh;
     padding-top: 80px;
-    background: #EFEFEF;
+    background: white;
     text-align: left;
 }
 
@@ -674,7 +675,7 @@ a {
     font-size: 24px;
     border-radius: 50px;
     color: white;
-    padding: 20px 40px;
+    padding: 15px 35px;
     cursor: pointer;
     width: 50%;
     margin: 0 auto;
@@ -1002,7 +1003,7 @@ a {
         font-size: 3vw;
     }
     .text {
-        padding-bottom: 0vh;
+        padding-bottom: 3vh;
     }
 }
 
@@ -1197,6 +1198,58 @@ a {
         object-fit: contain;
         height: 22vh;
     }
+    .header__body_top {
+        width: 50%;
+        left: 16%;
+    }
+    .header__body_top img {
+        width: 100px;
+    }
+    .header__body_top a {
+        margin-top: 10px;
+        font-size: 20px;
+    }
+    .header__body_ashley {
+        font-size: 30px;
+    }
+    .header__body_join {
+        font-size: 22px;
+        line-height: 35px;
+    }
+    .header {
+        background: #F9F9F9;
+    }
+    .adv__list_header img {
+        width: 120px;
+        height: 50px;
+    }
+    .adv__list_header {
+        width: 120%;
+        left: -10%;
+    }
+    .list_vs {
+        width: 25px !important;
+        height: 15px !important;
+    }
+    .not_cards img {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+    .msg__image {
+        width: 200px;
+    }
+    .msg__body>img {
+        width: 25px;
+        height: 20px;
+        margin-top: 30px;
+        margin-left: 15px;
+    }
+    .msg_icon {
+        width: 50px;
+        height: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
 }
 
 @media (max-width: 430px) {
@@ -1240,7 +1293,7 @@ a {
         width: 50px;
         height: 20px;
         position: relative;
-        bottom: 20px;
+        bottom: 0px;
     }
     .footer__title {
         font-size: 23px;
@@ -1253,6 +1306,68 @@ a {
     .header__body_top a {
         margin-top: 5px;
         font-size: 16px;
+    }
+    .woman__banner {
+        width: 100vw;
+        max-width: 1920px;
+        margin-top: 30px;
+        height: 12vh;
+    }
+    .adv__list_header {
+        width: 109%;
+        left: -5%;
+    }
+    .header__body_top a {
+        margin-top: 10px;
+        font-size: 16px;
+    }
+    .header__body_top img {
+        width: 80px;
+    }
+    .header__body_ashley {
+        font-size: 24px;
+    }
+    .header__body_join {
+        font-size: 20px;
+        line-height: 35px;
+    }
+    .msg__image {
+        width: 150px;
+    }
+    .msg_icon {
+        width: 30px;
+        height: 30px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .msg__text {
+        font-size: 14px;
+        width: 100%;
+    }
+    .msg__body>img {
+        margin-left: 0px;
+    }
+    .footer_button {
+        padding: 12px 40px;
+    }
+    .footer_button {
+        font-size: 14px;
+        width: 70%;
+    }
+    .adv__list_header img {
+        width: 100px;
+        height: 40px;
+    }
+    .adv__list_header {
+        width: 115%;
+        left: -7%;
+    }
+    .msg__body>img {
+        height: 15px;
+    }
+    .footer {
+        background-position-x: 50%;
+        padding-bottom: 23vh;
     }
 }
 
