@@ -369,7 +369,7 @@ a {
 }
 
 .not_cards {
-    width: 90%;
+    width: 87%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -378,7 +378,7 @@ a {
 
 .not_cards img {
     width: 400px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
 .popup__notify>div {
