@@ -1,269 +1,524 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="zxx" style="overflow: hidden;">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ashley Madison Alternativa e de Graça</title>
-    <meta name="description" content="Ashley Madison alternative for brazilians. Join the betrayal site that actually works! Half the price of Ashley Madison">
-    <meta name="Keywords" content="ashley madison, ashleymadison, ashley madison brasil, ashleymadison brasil, ashley madsion desconto,ashley madsion de graça, ashleymadison de graça.">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Yellowtail&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-
+    <title>nicholas. - Creative Photography Portfolio</title>
+    <link rel="shortcut icon" href="image/favicon.png" type="image/png">
     <link rel="preload" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" as="style" onload="this.rel='stylesheet'">
-    <link rel="preload" href="style/style.css" as="style" onload="this.rel='stylesheet'">
-    <link rel="preload" href="image/women_banner.png" as="image">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,400;0,600;0,700;1,300&display=swap" rel="stylesheet">
+    <link rel="preload" href="style/style.min.css" as="style" onload="this.rel='stylesheet'">
+    <link rel="preload" href="image/home_image.png" as="image">
+    <link rel="preload" href="image/backgrounds/home.jpg" as="image">
 </head>
 
-<body style="overflow-x: hidden;">
-    <!-- HEADER -->
-    <div class="header">
-        <div class="container">
-            <div class="header__body">
-                <div class="header__body_top">
-                    <img src="image/top_logotype.svg" alt="top_logotype" class="header__body_logo">
-                    <a href="#">Login</a>
+<body style="overflow: hidden;">
+    <!-- MENU -->
+    <div class="menu">
+        <div class="menu_full">
+            <div class="menu__header">
+                <p class="logotype">nicholas<span>.</span> </p>
+                <p class="menu__header_job">PHOTOGRAPHY</p>
+            </div>
+            <div class="menu__navigation">
+                <ul>
+                    <div class="menu__navigation_check"></div>
+                    <li>
+                        <a class="menu_navigation_active" id="home" href="#home">HOME</a>
+                    </li>
+                    <li>
+                        <a href="#about" id="about">ABOUT ME</a>
+                    </li>
+                    <li>
+                        <a href="#gallery" id="gallery">GALLERY</a>
+                    </li>
+                    <li>
+                        <a href="#services" id="services">SERVICES</a>
+                    </li>
+                    <li>
+                        <a href="#blog" id="blog">BLOG</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="menu__quote">
+                <div class="menu__quote_wrapper">
+                    <p class="menu__quote_text">“You don't take a photograph, you make it” <span>- Ansel Adams</span> </p>
                 </div>
-                <div class="header__body_text">
-                    <p class="header__body_desc">Melhor Que O</p>
-                    <h1 class="header__body_ashley">ASHLEY MADISO<span>N</span></h1>
-                    <p class="header__body_join">junte-se o site de traição que realmente funciona! </p>
+            </div>
+            <button class="menu_button">CONTACT</button>
+
+            <div class="minimize">
+                <p>Minimize:</p>
+                <div class="toggle">
+                    <input type="checkbox" id="toggle-button" class="toggle-button">
+                </div>
+            </div>
+        </div>
+        <div class="menu_minimize">
+            <p class="logotype_mini">
+                n<span>.</span>
+            </p>
+            <div class="menu_mini_links">
+                <i id="home_mini" class="fas fa-home menu_mini_links_active"></i>
+                <i id="about_mini" class="fas fa-info"></i>
+                <i id="gallery_mini" class="fas fa-images"></i>
+                <i id="services_mini" class="fas fa-camera-retro"></i>
+                <i id="blog_mini" class="fas fa-list-alt"></i>
+            </div>
+            <div class="menu_mini_footer">
+                <i id="contact_mini" class="fas fa-pen-alt"></i>
+                <div class="toggle toggle_mini">
+                    <input type="checkbox" id="toggle-button_mini" class="toggle-button_mini">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- TABLET / MOBILE MENU -->
+    <div class="mb_menu">
+        <div class="mb__menu__body">
+            <p class="logotype_mb">
+                nicholas<span>.</span>
+            </p>
+            <div class="mb_menu_links">
+                <i id="home_mb" class="fas fa-home menu_mini_links_active"></i>
+                <i id="about_mb" class="fas fa-info"></i>
+                <i id="gallery_mb" class="fas fa-images"></i>
+                <i id="services_mb" class="fas fa-camera-retro"></i>
+                <i id="blog_mb" class="fas fa-list-alt"></i>
+                <i id="contact_mb" class="far fa-address-book"></i>
+            </div>
+        </div>
+    </div>
+    <div class="main__content_wrapper">
+        <!-- HOME -->
+        <section class="home">
+            <div class="home__links">
+                <div class="links">
                     <a href="#">
-                        <button class="header_button">Registe-se gratuitamente <i class="fas fa-chevron-right register_blinks"></i> <div class="button_mask"></div></button>
+                        <div class="link"><i class="fab link_icon fa-pinterest-p"></i></div>
+                    </a>
+                    <a href="#">
+                        <div class="link"><i class="fab link_icon fa-behance"></i></i>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="link"><i class="fas link_icon fa-basketball-ball"></i></div>
                     </a>
                 </div>
             </div>
-        </div>
-        <img class="woman__banner" src="image/women_banner.png" alt="">
-    </div>
-    <!-- ADVANTAGES -->
-    <div class="advantages" id="advantages">
-        <div class="container">
-            <div class="adv__body">
-                <div class="adv__list_header">
-                    <img src="image/top_logotype.svg" alt="sashavs">
-                    <img class="list_vs" src="image/VS.png" alt="">
-                    <img src="image/ashley_logo.svg" alt="ashley_adv">
-                </div>
-                <div class="adv_items">
-                    <div class="adv__item">
-                        <img src="image/icons/done.png" alt="done">
-                        <div class="adv__item_text">
-                            <img src="image/icons/read messages.png" alt="messages">
-                            <p class="adv__item_desc">Leia suas mensagens grátis!</p>
-                        </div>
-                        <img src="image/icons/cansel.png" alt="cansel">
-                    </div>
-                    <div class="adv__item">
-                        <img src="image/icons/done.png" alt="done">
-                        <div class="adv__item_text">
-                            <img src="image/icons/flag.png" alt="messages">
-                            <p class="adv__item_desc">Mais membros brasileiros verificados!</p>
-                        </div>
-                        <img src="image/icons/cansel.png" alt="cansel">
-                    </div>
-                    <div class="adv__item">
-                        <img src="image/icons/done.png" alt="done">
-                        <div class="adv__item_text">
-                            <img src="image/icons/discount.png" alt="messages">
-                            <p class="adv__item_desc">Metade do preço!!</p>
-                        </div>
-                        <img src="image/icons/cansel.png" alt="cansel">
-                    </div>
-                    <div class="adv__item">
-                        <img src="image/icons/done.png" alt="done">
-                        <div class="adv__item_text">
-                            <img src="image/icons/ghost.png" alt="messages">
-                            <p class="adv__item_desc">Envie fotos que se autodestruam em 5s!</p>
-                        </div>
-                        <img src="image/icons/cansel.png" alt="cansel">
-                    </div>
-                    <div class="adv__item">
-                        <img src="image/icons/done.png" alt="done">
-                        <div class="adv__item_text">
-                            <img src="image/icons/woman.png" alt="messages">
-                            <p class="adv__item_desc">100% grátis para mulheres!</p>
-                        </div>
-                        <img src="image/icons/cansel.png" alt="cansel">
-                    </div>
-                    <div class="adv__item">
-                        <img src="image/icons/done.png" alt="done">
-                        <div class="adv__item_text">
-                            <img src="image/icons/coach.png" alt="messages">
-                            <p class="adv__item_desc">Coaching grátis e dicas secretas!</p>
-                        </div>
-                        <img src="image/icons/cansel.png" alt="cansel">
-                    </div>
-                    <div class="adv__item">
-                        <img src="image/icons/done.png" alt="done">
-                        <div class="adv__item_text">
-                            <img src="image/icons/mic.png" alt="messages">
-                            <p class="adv__item_desc">Notas de voz que se autodestruam em 5 segundos!</p>
-                        </div>
-                        <img src="image/icons/cansel.png" alt="cansel">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- DIFFERENT -->
-    <div class="different">
-        <div class="container">
-            <div class="different__body">
-                <p class="different__body_title">Como Sasha7 é melhor</p>
-                <div class="different__body_items">
-                    <div class="different__body_item">
-                        <div class="different_body_quest">
-                            <img src="image/icons/plus.png" alt="plus">
-                            <p class="different__body_item_text">Metade do preço!</p>
-                        </div>
-                        <div class="different__body_item_desc">
-                            <p><span>SASHA7:</span> Sabemos que você vai adorar o site, super bem sucedido, e continuar nos usando. Não precisamos te precificar.</p>
-                            <p><span>ASHLEY MADISON:</span> Mais de 2x o preço!!</p>
-                        </div>
-                    </div>
-                    <div class="different__body_item">
-                        <div class="different_body_quest">
-                            <img src="image/icons/plus.png" alt="plus">
-                            <p class="different__body_item_text">2 vezes mais membros brasileiros verificados</p>
-                        </div>
-                        <div class="different__body_item_desc">
-                            <p><span>SASHA7:</span> Estamos totalmente focados no mercado brasileiro. Todos os nossos esforços são direcionados para o crescimento da nossa base de usuários no Brasil para que não importe em que cidade você esteja sempre haverá
-                                uma comunidade de pessoas buscando encontros emocionantes.</p>
-                            <p><span>ASHLEY MADISON:</span> Membros não verificados sem qualquer foco específico no Brasil.</p>
-                        </div>
-                    </div>
-                    <div class="different__body_item">
-                        <div class="different_body_quest">
-                            <img src="image/icons/plus.png" alt="plus">
-                            <p class="different__body_item_text">Leia suas mensagens grátis!</p>
-                        </div>
-                        <div class="different__body_item_desc">
-                            <p><span>SASHA7:</span> Deixamos você ler as mensagens que recebe gratuitamente. Não temos nada a esconder.</p>
-                            <p><span>ASHLEY MADISON:</span> Deve pagar primeiro antes de ler qualquer mensagem que você receber. Você não pode ler nenhuma mensagem que recebeu até pagar! Eu me pergunto por quê?</p>
-                        </div>
-                    </div>
-                    <div class="different__body_item">
-                        <div class="different_body_quest">
-                            <img src="image/icons/plus.png" alt="plus">
-                            <p class="different__body_item_text">Envie fotos que se autodestruam em 5 segundos</p>
-                        </div>
-                        <div class="different__body_item_desc">
-                            <p><span>SASHA7:</span> Envie fotos que desaparecem após 5 segundos. Espere receber muito mais fotos picantes/sensuais desta maneira e se sinta mais seguro enviando suas próprias fotos.</p>
-                            <p><span>ASHLEY MADISON:</span> Nenhum recurso de fotos de desaparecimento automático. Nenhum recurso que permita enviar fotos que desaparecem após 5 segundos. Boa sorte em casar alguém, em um relacionamento, ou precisando de
-                                discrição, para compartilhar qualquer foto picante se eles acham que você pode mantê-las.</p>
-                        </div>
-                    </div>
-                    <div class="different__body_item">
-                        <div class="different_body_quest">
-                            <img src="image/icons/plus.png" alt="plus">
-                            <p class="different__body_item_text">100% grátis para mulheres</p>
-                        </div>
-                        <div class="different__body_item_desc">
-                            <p><span>SASHA7:</span> Permitimos que todas as mulheres usem nosso site 100% gratuitamente porque queremos uma comunidade vibrante e ativa de usuários. Assim como bons clubes deixam as mulheres entrarem de graça!</p>
-                            <p><span>ASHLEY MADISON:</span> As mulheres também devem pagar. Há mulheres de verdade?</p>
-                        </div>
-                    </div>
-                    <div class="different__body_item">
-                        <div class="different_body_quest">
-                            <img src="image/icons/plus.png" alt="plus">
-                            <p class="different__body_item_text">Envie notas de voz que se autodestruam em 5 segundos</p>
-                        </div>
-                        <div class="different__body_item_desc">
-                            <p><span>SASHA7:</span> Um número esmagador de nossas usuárias nos escreveu pedindo recursos de notas de voz. Agora você pode enviar notas de voz que desaparecem após 5 segundos. Não deveria ser uma surpresa que as mulheres AMAM
-                                enviar notas de voz, especialmente na América Latina. Fizemos esse recurso especificamente porque foi solicitado por muitas de nossas usuárias.</p>
-                            <p><span>ASHLEY MADISON:</span> Sem recursos adicionais. Não é muito inovador</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- NOTIFICATION -->
-    <div class="notification">
-        <div class="container">
-            <div class="not__body">
-                <p class="not__body_title">Novo e Bombando</p>
-                <div class="not__body_header">
-                    <img src="image/icons/info.png" alt="info">
-                    <p class="not__body_text">esses usuários ativaram especificamente a exibição (discretamente) em nossas páginas iniciais</p>
-                </div>
-                <div class="not_cards">
-
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- MESSAGES -->
-    <div class="messages">
-        <div class="msg__container">
-            <div class="msg__body">
-                <div class="msg__sasha">
-                    <img class="msg__image" src="image/sasha_phone.png" alt="sasha__phone">
-                    <img class="msg_icon" src="image/icons/done.png" alt="done">
-                    <p class="msg__text">Leia suas mensagens gratuitamente</p>
-                </div>
-                <img src="image/vs_black.png" alt="vs">
-                <div class="msg__sasha">
-                    <img class="msg__image" src="image/ashley_phone.png" alt="sasha__phone">
-                    <img class="msg_icon" src="image/icons/cansel.png" alt="done">
-                    <p class="msg__text">Deve pagar para ler mensagens</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- TEXT -->
-    <div class="text">
-        <div class="container">
-            <div class="text__body">
-                <p class="text__body_title">A Diferença do Sasha7</p>
-                <p class="text__body_desc">Quando usamos Ashley Madison pela primeira vez em 2014, percebemos que tinha que haver uma maneira melhor de conectar pessoas casadas para assuntos discretos. Não faltam homens que se sintam presos em relacionamentos sexualmente insatisfeitos,
-                    mas somos levados a acreditar que o mesmo não é verdade para mulheres casadas. É por isso que tantos sites de namoro usam robôs e por isso há muitos homens e poucas mulheres! Então lemos todos os estudos psicológicos, falamos com inúmeros
-                    conselheiros matrimoniais, psicólogos e outros especialistas. O que determinamos foi que as mulheres desejam assuntos tanto quanto os homens, mas por razões muito diferentes. Sites como Ashley Madison concentram seu marketing em homens
-                    baseados em como os homens trapaceiam. Isso não é surpresa, já que Ashley Madison cobra dos homens muito mais do que as mulheres para usarem seus serviços. Mas se homens e mulheres trapacearem de maneiras muito diferentes e por razões
-                    muito diferentes, então o marketing direcionado aos homens terá pouco ou nenhum efeito sobre as mulheres. Isso é o que torna Sasha7 diferente, focamos nosso marketing em mulheres primeiro e confiamos que um site com mulheres reais
-                    sérias sobre ter casos atrairá os homens organicamente. Além disso, cobramos $0 às mulheres. É totalmente grátis para elas usarem. Queremos remover todas as barreiras para as mulheres e tornar o mais fácil e rápido possível para elas
-                    encontrarem um caso. Veja abaixo nossas descobertas sobre as diferenças entre como homens e mulheres trapaceiam.</p>
-            </div>
-        </div>
-    </div>
-    <!-- FOOTER -->
-    <div class="footer">
-        <div class="container">
-            <div class="footer__body">
-                <p class="footer__title">Junte-se ao Site de Relacionamento <br> Mais Bombeamento do Brasil</p>
-                <p class="footer_desc">Namorar nunca foi tão fácil</p>
-                <a href="#"> <button class="footer_button">Tenha um caso esta noite <i class="fas fa-chevron-right register_blinks"></i></button></a>
-                <img class="footer_counter" src="image/counter.png" alt="counter">
-                <p class="footer_desc">Membros Brasileiros Ativos</p>
-                <div class="footer_links">
-                    <a href="#">Privacy Policy |</a>
-                    <a href="#">Terms |</a>
-                    <a href="#">Contact</a>
-                </div>
-            </div>
-        </div>
-        <div class="footer__body_bottom">
             <div class="container">
-                <div class="footer__body_content">
-                    <p class="footer__body_text">Casados, mas procurando?</p>
-                    <a href="#"><button class="footer__body_button_2">Tenha um caso esta noite <i class="fas fa-chevron-right register_blinks"></i><div class="button_mask"></div></button></a>
+                <div class="home__body">
+                    <div class="home__body_text">
+                        <div class="home__body_title">
+                            <h1>NICHOLAS BLAKE</h1>
+                        </div>
+                        <p>I am a creative photographer, I love my job. After working with me, you will receive beautiful, modern and professional photos.</p>
+                        <div class="home__body_button">
+                            <span>GALLERY</span>
+                            <div class="home_button_circle">
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="home__body_image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT ME -->
+        <section class="about">
+            <div class="container">
+                <div class="about__body">
+                    <div class="about__body_image">
+                        <img src="image/about__image.png" alt="About">
+                    </div>
+                    <div class="about__body_text">
+                        <h1 class="about__body_name">NICHOLAS BLAKE</h1>
+                        <div class="about__body_job">PHOTOGRAPHER</div>
+                        <div class="about__body_desc">
+                            Hello my friend! My name is Nicholas and I am a creative photographer from Texas.
+                        </div>
+                        <div class="about__body_desc">
+                            I studied photography at the University of Washington, and improved my skills by photographing friends and loved ones in my spare time.
+                        </div>
+                        <div class="about__body_desc">
+                            I really love working with people, so I will be glad if you agree to take your photos with me.
+                        </div>
+                        <div class="about__body_info">
+                            <div class="about__body_datas">
+                                <p class="about__body_data">Birthday: <span>02.04.1997</span></p>
+                                <p class="about__body_data">Age: <span>24</span></p>
+                                <p class="about__body_data">Email: <span>email@gmail.com</span></p>
+                                <p class="about__body_data">Phone: <span>+77 166 733 11 22</span></p>
+                                <p class="about__body_data">Can be hired: <span>yes</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- GALLERY -->
+        <section class="gallery">
+            <div class="container">
+                <div class="gallery__body">
+                    <div class="gallery__body_header">
+                        <h1>CREATIVE PORTFOLIO</h1>
+                        <div class="gallery__body_sort">
+                            <p class="gallery__body_sort_active" id="all_button">All</p>
+                            <p id="photography_button">PHOTO</p>
+                            <p id="creative_button">CREATIVE</p>
+                            <p id="uiux_button">UI/UX</p>
+                        </div>
+                    </div>
+                    <div class="gallery__body_photos">
+                        <div class="gallery__body_wrapper">
+                            <div class="gallery__item item__show creative">
+                                <img class="gallery__image" src="image/gallery/photo-1.png" alt="">
+                                <div class="gallery__item_desc">
+                                    <p class="slide_info_category">CREATIVE</p>
+                                    <p class="slide_info_data">22.06.2021</p>
+                                </div>
+                            </div>
+                            <div class="gallery__item item__show photography">
+                                <img class="gallery__image" src="image/gallery/photo-2.png" alt="">
+                                <div class="gallery__item_desc">
+                                    <p class="slide_info_category">PHOTOGRAPHY</p>
+                                    <p class="slide_info_data">28.06.2021</p>
+                                </div>
+                            </div>
+                            <div class="gallery__item item__show uiux">
+                                <img class="gallery__image" src="image/gallery/photo-3.png" alt="">
+                                <div class="gallery__item_desc">
+                                    <p class="slide_info_category">UI/UX</p>
+                                    <p class="slide_info_data">10.07.2021</p>
+                                </div>
+                            </div>
+                            <div class="gallery__item item__show creative">
+                                <img class="gallery__image" src="image/gallery/photo-1.png" alt="">
+                                <div class="gallery__item_desc">
+                                    <p class="slide_info_category">CREATIVE</p>
+                                    <p class="slide_info_data">22.06.2021</p>
+                                </div>
+                            </div>
+                            <div class="gallery__item item__show creative">
+                                <img class="gallery__image" src="image/gallery/photo-1.png" alt="">
+                                <div class="gallery__item_desc">
+                                    <p class="slide_info_category">CREATIVE</p>
+                                    <p class="slide_info_data">22.06.2021</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- SERVICES -->
+        <section class="services">
+            <div class="container">
+                <div class="services__body">
+                    <div class="services__body_header">
+                        <h1>SERVICES</h1>
+                    </div>
+                    <div class="services__cards">
+                        <a href="#">
+                            <div class="services__card">
+                                <img class="services__img" src="image/services/personal.png" alt="">
+                                <div class="services__mask">
+                                    <div class="services_mask_wrapper">
+                                        <p class="services__mask_text">PERSONAL</p>
+                                        <i class="fas services_arrow fa-arrow-right"></i>
+                                    </div>
+                                </div>
+                                <div class="services__card_mask"></div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="services__card">
+                                <img class="services__img" src="image/services/travel.png" alt="">
+                                <div class="services__mask">
+                                    <div class="services_mask_wrapper">
+                                        <p class="services__mask_text">TRAVEL</p>
+                                        <i class="fas services_arrow fa-arrow-right"></i>
+                                    </div>
+                                </div>
+                                <div class="services__card_mask"></div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="services__card">
+                                <img class="services__img" src="image/services/business.png" alt="">
+                                <div class="services__mask">
+                                    <div class="services_mask_wrapper">
+                                        <p class="services__mask_text">BUSINESS</p>
+                                        <i class="fas services_arrow fa-arrow-right"></i>
+                                    </div>
+                                </div>
+                                <div class="services__card_mask"></div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="services__card">
+                                <img class="services__img" src="image/services/party.png" alt="">
+                                <div class="services__mask">
+                                    <div class="services_mask_wrapper">
+                                        <p class="services__mask_text">PARTY</p>
+                                        <i class="fas services_arrow fa-arrow-right"></i>
+                                    </div>
+                                </div>
+                                <div class="services__card_mask"></div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="services__card">
+                                <img class="services__img" src="image/services/concert.png" alt="">
+                                <div class="services__mask">
+                                    <div class="services_mask_wrapper">
+                                        <p class="services__mask_text">CONCERT</p>
+                                        <i class="fas services_arrow fa-arrow-right"></i>
+                                    </div>
+                                </div>
+                                <div class="services__card_mask"></div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="services__card">
+                                <img class="services__img" src="image/services/wedding.png" alt="">
+                                <div class="services__mask">
+                                    <div class="services_mask_wrapper">
+                                        <p class="services__mask_text">WEDDING</p>
+                                        <i class="fas services_arrow fa-arrow-right"></i>
+                                    </div>
+                                </div>
+                                <div class="services__card_mask"></div>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- BLOG -->
+        <section class="blog">
+            <div class="container">
+                <div class="blog__wrapper">
+                    <div class="blog__body">
+                        <div class="blog__body_header">
+                            <h1>PERSONAL BLOG</h1>
+                        </div>
+                        <div class="blog__left button_blog" id="blog__left">
+                            <i class="fas fa-arrow-left button_left_blog"></i>
+                        </div>
+                        <div class="blog__body_wrapper">
+                            <div class="blog__body_items" style="transform:translateX(0px)">
+                                <div class="blog__body_item" id="blog_post_1">
+                                    <div class="blog_body_mask"></div>
+                                    <img class="blog__item_img" src="image/blog/blog_1.png" alt="Blog1">
+                                    <div class="blog__item__info">
+                                        <p class="blog__info_title">MY FIRST EXPERIENCE</p>
+                                        <p class="blog__info_date">July 24, 2021 </p>
+                                        <p class="blog__info_more">Read More</p>
+                                    </div>
+                                </div>
+                                <div class="blog__body_item" id="blog_post_2">
+                                    <div class="blog_body_mask"></div>
+                                    <img class="blog__item_img" src="image/blog/blog_2.png" alt="Blog2">
+                                    <div class="blog__item__info">
+                                        <p class="blog__info_title">MY BEST WORK</p>
+                                        <p class="blog__info_date">July 20, 2021 </p>
+                                        <p class="blog__info_more">Read More</p>
+                                    </div>
+                                </div>
+                                <div class="blog__body_item" id="blog_post_3">
+                                    <div class="blog_body_mask"></div>
+                                    <img class="blog__item_img" src="image/blog/blog_3.png" alt="Blog3">
+                                    <div class="blog__item__info">
+                                        <p class="blog__info_title">ABOUT MY DEVICE</p>
+                                        <p class="blog__info_date">July 14, 2021 </p>
+                                        <p class="blog__info_more">Read More</p>
+                                    </div>
+                                </div>
+                                <div class="blog__body_item" id="blog_post_1">
+                                    <div class="blog_body_mask"></div>
+                                    <img class="blog__item_img" src="image/blog/blog_1.png" alt="Blog4">
+                                    <div class="blog__item__info">
+                                        <p class="blog__info_title">MY FIRST EXPERIENCE</p>
+                                        <p class="blog__info_date">July 24, 2021 </p>
+                                        <p class="blog__info_more">Read More</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog__right button_blog" id="blog__right">
+                            <i class="fas fa-arrow-right button_right_blog"></i>
+                        </div>
+                    </div>
+                    <div class="blog__page">
+                        <div class="blog__page_body" id="blog_1">
+                            <div class="blog__page_text">
+                                <p class="blog__page_back"><i class="fas fa-arrow-left"></i> Back to main</p>
+                                <p class="blog__page_title">MY FIRST EXPERIENCE</p>
+                                <p class="blog__page_subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+                                <p class="blog__page_text">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo.</p>
+                                <p class="blog__page_text">Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit,
+                                    amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                                <p class="blog__page_text">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus id, quod maxime placeat, facere possimus, omnis voluptas assumenda est,
+                                    omnis dolor repellendus.</p>
+                                <div class="blog__page_share">
+                                    <p class="blog__share_text">SHARE: </p>
+                                    <a href="#">
+                                        <div class="blog__share_link">
+                                            <i class="fab fa-pinterest-p"></i>
+                                        </div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="blog__share_link">
+                                            <i class="fab fa-behance"></i>
+                                        </div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="blog__share_link">
+                                            <i class="fas fa-basketball-ball"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div>
+                                <img class="blog__page_img" src="image/blog/blog_1.png" alt="Blog Poster">
+                                <div class="blog__img_mask"></div>
+                            </div>
+                        </div>
+
+                        <div class="blog__page_body" id="blog_2">
+                            <div class="blog__page_text">
+                                <p class="blog__page_back"><i class="fas fa-arrow-left"></i> Back to main</p>
+                                <p class="blog__page_title">MY BEST WORK</p>
+                                <p class="blog__page_subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+                                <p class="blog__page_text">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo.</p>
+                                <p class="blog__page_text">Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit,
+                                    amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                                <p class="blog__page_text">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus id, quod maxime placeat, facere possimus, omnis voluptas assumenda est,
+                                    omnis dolor repellendus.</p>
+                                <div class="blog__page_share">
+                                    <p class="blog__share_text">SHARE: </p>
+                                    <a href="#">
+                                        <div class="blog__share_link">
+                                            <i class="fab fa-pinterest-p"></i>
+                                        </div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="blog__share_link">
+                                            <i class="fab fa-behance"></i>
+                                        </div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="blog__share_link">
+                                            <i class="fas fa-basketball-ball"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div>
+                                <img class="blog__page_img" src="image/blog/blog_2.png" alt="Blog Poster">
+                                <div class="blog__img_mask"></div>
+                            </div>
+                        </div>
+
+                        <div class="blog__page_body" id="blog_3">
+                            <div class="blog__page_text">
+                                <p class="blog__page_back"><i class="fas fa-arrow-left"></i> Back to main</p>
+                                <p class="blog__page_title">ABOUT MY DEVICE</p>
+                                <p class="blog__page_subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+                                <p class="blog__page_text">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo.</p>
+                                <p class="blog__page_text">Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit,
+                                    amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                                <p class="blog__page_text">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus id, quod maxime placeat, facere possimus, omnis voluptas assumenda est,
+                                    omnis dolor repellendus.</p>
+                                <div class="blog__page_share">
+                                    <p class="blog__share_text">SHARE: </p>
+                                    <a href="#">
+                                        <div class="blog__share_link">
+                                            <i class="fab fa-pinterest-p"></i>
+                                        </div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="blog__share_link">
+                                            <i class="fab fa-behance"></i>
+                                        </div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="blog__share_link">
+                                            <i class="fas fa-basketball-ball"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div>
+                                <img class="blog__page_img" src="image/blog/blog_3.png" alt="Blog Poster">
+                                <div class="blog__img_mask"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- CONTACTS -->
+        <section class="contact">
+            <div class="container">
+                <div class="contact__body">
+                    <h1>CONTACT</h1>
+                    <div class="contact__body_content">
+                        <div class="contact__body_text">
+                            <p class="contact__body_text"><span>Adress:</span> LA, 551 S Montebello Blvd </p>
+                            <p class="contact__body_text"><span>Phone number:</span> +77 454 673 23 34 </p>
+                            <p class="contact__body_text"><span>Email:</span> email@gmail.com </p>
+                            <p class="contact__body_text">Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt.</p>
+                            <p class="contact__body_text">Neque porro quisquam est, qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                        </div>
+                        <div class="contact__body_form">
+                            <p class="contact__form_title">Contact form</p>
+                            <p class="contact__form_desc">answer within 2 hours</p>
+
+                            <textarea placeholder="Name*"></textarea>
+                            <textarea placeholder="Email adress*"></textarea>
+                            <textarea placeholder="Phone number"></textarea>
+                            <textarea class="form__message" placeholder="Your message*"></textarea>
+                            <div class="form__body_button">
+                                <button class="form_send_button">SEND</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="navigation">
+        <div class="navigation__buttons">
+            <div class="nav_button" id="left">
+                <i class="fas fa-arrow-left nav_icons"></i>
+            </div>
+            <div class="nav_button" id="right">
+                <i class="fas fa-arrow-right nav_icons"></i>
+            </div>
+        </div>
+        <div class="progress__bar">
+            <div class="bar">
+                <div class="bar_info">
+                    <div class="bar_info_wrapper">
+                        <p class="bar_number">01</p>
+                    </div>
                 </div>
             </div>
         </div>
-        <!-- POPUP -->
-        <div class="popup__notify">
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/main.min.js" async></script>
 
-        </div>
-        <!-- SCRIPTS -->
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script src="js/main.js"></script>
 </body>
 
 </html>
