@@ -32,6 +32,10 @@
     transition: 0.2s;
 }
 
+.join__menu {
+    position: absolute;
+}
+
 .mail__email_resend p {
     margin-bottom: 0;
 }
@@ -125,9 +129,18 @@
     margin: 0 auto;
 }
 
+.age__input {
+    width: 20% !important;
+    font-style: normal !important;
+    text-align: center !important;
+    padding-left: 0 !important;
+}
+
 .join__logotype {
     width: 160px;
     margin: 0 auto;
+    margin-bottom: 40px;
+    margin-top: 50px;
 }
 
 .join__body {
@@ -136,6 +149,8 @@
 
 .join__step-counter {
     text-align: end;
+    top: 10px;
+    position: relative;
 }
 
 .avatar_slider>ul {
@@ -199,6 +214,7 @@
     transition: 0.3s;
     border-radius: 20px;
     color: white;
+    font-size: 14px;
 }
 
 .join_continue_button:hover {
@@ -278,6 +294,14 @@
     border-radius: 5px;
     padding-left: 10px;
     box-sizing: border-box;
+    -webkit-border: 1px solid #aaa;
+    -webkit-color: #aaa;
+    -webkit-background: white;
+    -webkit-height: 40px;
+    -webkit-outline: none;
+    -webkit-border-radius: 5px;
+    -webkit-padding-left: 10px;
+    -webkit-box-sizing: border-box;
 }
 
 .input_height {
@@ -1001,6 +1025,10 @@
 }
 
 @media (max-width: 490px) {
+    .font-size-fix {
+        font-size: 10px;
+        letter-spacing: 0;
+    }
     .show__password {
         right: 7%;
         width: 20%;
@@ -1080,7 +1108,7 @@
         width: 90%;
     }
     .join_continue_button {
-        font-size: 12px;
+        font-size: 16px;
     }
 }
 
