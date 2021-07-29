@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>join | Sasha7</title>
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="overflow-x: hidden; padding-top: 0rem;">
+
+    <section class="join">
+        <div class="join-container">
+            <!-- STEP 1 -->
+            <div class="step-1">
+                <div class="join__body">
+                    <p class="join__step-counter">1/4</p>
+                    <img class="join__logotype" src="join/logotype.png" alt="Logotype">
+                    <p class="join__text_text">Vamos configurar o seu perfil!</p>
+                    <div class="join_block join__gender" id="question-1">
+                        <p class="join__gender_title">Qual seu gênero?</p>
+                        <div class="join_buttons buttons_gender">
+                            <button class="join_button">Homem</button>
+                            <button class="join_button">Mulher</button>
+                        </div>
+                    </div>
+                    <div class="join_block join__status" id="question-2" style="opacity: 0; transition: 0.4s; visibility: hidden;">
+                        <p class="join__gender_title">Qual o seu status de re acionamento?</p>
+                        <div class="join_buttons buttons_status">
+                            <button class="join_button">Comprometido</button>
+                            <button class="join_button">Solteito</button>
+                        </div>
+                    </div>
+                    <div class="join_block join__interes" id="question-3" style="opacity: 0; transition: 0.4s; visibility: hidden;">
+                        <p class="join__gender_title">No que você está interessado(a)?</p>
+                        <div class="join_buttons buttons_interes">
+                            <button class="join_button">Homens</button>
+                            <button class="join_button">Mulheres</button>
+                            <button class="join_button">Ambos</button>
+                        </div>
+                    </div>
+                    <button class="join_continue_button" id="step-1-button" style="opacity: 0.5;">Continuar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Slick Slider -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

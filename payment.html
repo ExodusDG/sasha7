@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- MENU -->
+
+    <nav class="nav nav-pills nav-justified align-items-center fixed-top main bg-white shadow-sm" id="desktopMain">
+        <a class="nav-link logo" href="/">
+            <img src="img/logo.png" class="p-1">
+        </a>
+        <a class="nav-link" href="/explore">
+            <img src="img/search-inactive.svg" width="28" height="28">
+        </a>
+        <a class="nav-link" href="/messages">
+            <img src="img/message-inactive.svg" width="28" height="28">
+        </a>
+        <a class="nav-link" href="/liked-me">
+            <img src="img/heart-inactive.svg" width="28" height="28">
+        </a>
+        <a class="nav-link" href="/keys/granted">
+            <img src="img/key-inactive.svg" width="28" height="28">
+        </a>
+        <div class="dropdown nav-link">
+            <a href="#" class="avatar dropdown-toggle p-1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img src="https://sasha7-static.s3.amazonaws.com/photos/male.jpg" alt="..." class="avatar-img rounded-circle">
+            </a>
+            <div class='dropdown-menu dropdown-menu-right dropdown-menu-grey'>
+                <a class='dropdown-item' href='/profile'>
+    		    Perfil
+    		  </a>
+                <a class='dropdown-item' href='/photos'>
+    		    Fotos
+    		  </a>
+                <!-- @Todo - Only for non-paying -->
+                <a class='dropdown-item' href='/plans'>
+    		    Melhoria
+    		  </a>
+                <a class='dropdown-item' href='/settings'>
+    		    Configurações
+    		  </a>
+                <hr class='dropdown-divider' />
+                <form action='/logout' class='dropdown-item pt-0' method='post'>
+                    <button type='submit' class='btn rounded'>
+    		      <svg
+    		        xmlns='http://www.w3.org/2000/svg'
+    		        width='24'
+    		        height='24'
+    		        fill='currentColor'
+    		        class='bi bi-box-arrow-right'
+    		        viewBox='0 0 16 16'
+    		      >
+    		        <path
+    		          fill-rule='evenodd'
+    		          d='M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z'
+    		        ></path>
+    		        <path
+    		          fill-rule='evenodd'
+    		          d='M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z'
+    		        ></path>
+    		      </svg><span class='pl-2'>Sair</span></button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <nav class="nav nav-pills nav-justified align-items-center fixed-top main" id="mobileMain">
+        <a class="navbar-brand" href="/" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <div class="profile position-relative">
+                <img src="https://sasha7-static.s3.amazonaws.com/photos/male.jpg">
+            </div>
+        </a>
+        <div class='dropdown-menu dropdown-menu-right dropdown-menu-grey'>
+            <a class='dropdown-item' href='/profile'>
+    	    Perfil
+    	  </a>
+            <a class='dropdown-item' href='/photos'>
+    	    Fotos
+    	  </a>
+            <!-- @Todo - Only for non-paying -->
+            <a class='dropdown-item' href='/plans'>
+    	    Melhoria
+    	  </a>
+            <a class='dropdown-item' href='/settings'>
+    	    Configurações
+    	  </a>
+            <hr class='dropdown-divider' />
+            <form action='/logout' class='dropdown-item pt-0' method='post'>
+                <button type='submit' class='btn rounded'>
+    	      <svg
+    	        xmlns='http://www.w3.org/2000/svg'
+    	        width='24'
+    	        height='24'
+    	        fill='currentColor'
+    	        class='bi bi-box-arrow-right'
+    	        viewBox='0 0 16 16'
+    	      >
+    	        <path
+    	          fill-rule='evenodd'
+    	          d='M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z'
+    	        ></path>
+    	        <path
+    	          fill-rule='evenodd'
+    	          d='M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z'
+    	        ></path>
+    	      </svg><span class='pl-2'>Sair</span></button>
+            </form>
+        </div>
+        <a class="logo" href="/">
+            <img class="w-100" src="/img/logo.png">
+        </a>
+        <a class="filters-toggle" data-toggle="modal" data-target=".filters-modal">
+            <img src="/img/filter.svg" alt="" width="36">
+        </a>
+    </nav>
+    <!--  MENU END -->
+
+    <!-- SLIDER -->
+    <section class="slider-main">
+        <div class="container">
+            <div class="slider__block">
+                <div class="slider__container">
+                    <p class="slider__block_title">Como o Premium ajuda a conseguir encontros</p>
+                </div>
+                <div class="slider-carousel">
+                    <div class="slider-carousel-slide">
+                        <div class="slider-carousel-icon">
+                            <img src="img/chat-box.svg" alt="Icon">
+                        </div>
+                        <div class="slider-carousel-text">
+                            <p class="carousel-icon-title">Mensagens ilimitadas</p>
+                            <p class="carousel-icon-subtitle">Envie e responda mensagens</p>
+                        </div>
+                    </div>
+                    <div class="slider-carousel-slide">
+                        <div class="slider-carousel-icon">
+                            <img src="img/ghost.svg" alt="Icon">
+                        </div>
+                        <div class="slider-carousel-text">
+                            <p class="carousel-icon-title">Aúdios que desaparecem</p>
+                            <p class="carousel-icon-subtitle">Enviar & receber áudios marcados para desaparecer em 5 segundos</p>
+                        </div>
+                    </div>
+                    <div class="slider-carousel-slide">
+                        <div class="slider-carousel-icon">
+                            <img src="img/first-place.svg" alt="Icon">
+                        </div>
+                        <div class="slider-carousel-text">
+                            <p class="carousel-icon-title">Topo dos Resultados</p>
+                            <p class="carousel-icon-subtitle">Apareça no topo dos resultados de pesquisas e ganhe prioridade de visibilidade para novos membros na sua área.</p>
+                        </div>
+                    </div>
+                    <div class="slider-carousel-slide">
+                        <div class="slider-carousel-icon">
+                            <img src="img/gallery.svg" alt="Icon">
+                        </div>
+                        <div class="slider-carousel-text">
+                            <p class="carousel-icon-title">Acesse Galerias Privadas</p>
+                            <p class="carousel-icon-subtitle">Solicite acesso privado e veja as galerias privadas de qualquer pessoa.</p>
+                        </div>
+                    </div>
+                    <div class="slider-carousel-slide">
+                        <div class="slider-carousel-icon">
+                            <img src="img/ghost.svg" alt="Icon">
+                        </div>
+                        <div class="slider-carousel-text">
+                            <p class="carousel-icon-title">Fotos que Desapareçem</p>
+                            <p class="carousel-icon-subtitle">Enviar & receber fotos marcadas para desaparecer em 5 segundos.</p>
+                        </div>
+                    </div>
+                    <div class="slider-carousel-slide">
+                        <div class="slider-carousel-icon">
+                            <img src="img/read.svg" alt="Icon">
+                        </div>
+                        <div class="slider-carousel-text">
+                            <p class="carousel-icon-title">Leia as Mensagens para a Vida</p>
+                            <p class="carousel-icon-subtitle">Mantenha sua capacidade de ler mensagens enviadas para você. Este recurso termina 1 semana após o registro</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-counter">
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- MAIN CONTENT -->
+    <div class="content">
+        <div class="tariff-cards">
+            <div class="tariff-card">
+                <div class="tariff-card-adv">
+                    <span>Best Value</span>
+                </div>
+                <div class="tariff-card-info">
+                    <p class="tariff-card-mounth-count">6</p>
+                    <p class="tariff-card-mounth">Mês</p>
+                </div>
+                <div class="tariff-card-price">
+                    <p class="tariff-card-price-cost">R$16.99</p>
+                    <p class="tariff-card-period">Por Semana</p>
+                </div>
+                <div class="tariff-card-discount">Economize 65%</div>
+                <p class="tariff-card-bottom-price">R$299.99</p>
+            </div>
+            <div class="tariff-card tariff-card-active">
+                <div class="tariff-card-adv tariff-card-adv-active">
+                    <span>Most Popular</span>
+                </div>
+                <div class="tariff-card-info">
+                    <p class="tariff-card-mounth-count tariff-card-mounth-count-active">3</p>
+                    <p class="tariff-card-mounth tariff-card-mounth-active">Mês</p>
+                </div>
+                <div class="tariff-card-price">
+                    <p class="tariff-card-price-cost">R$16.99</p>
+                    <p class="tariff-card-period">Por Semana</p>
+                </div>
+                <div class="tariff-card-discount card-gradient-discount-active">Economize 50%</div>
+                <p class="tariff-card-bottom-price">R$299.99</p>
+            </div>
+            <div class="tariff-card">
+                <div class="tariff-card-info">
+                    <p class="tariff-card-mounth-count">1</p>
+                    <p class="tariff-card-mounth">Mês</p>
+                </div>
+                <div class="tariff-card-price">
+                    <p class="tariff-card-price-cost">R$36.99</p>
+                    <p class="tariff-card-period">Por Semana</p>
+                </div>
+                <p class="tariff-card-bottom-price">R$299.99</p>
+            </div>
+        </div>
+        <div class="cards-bottom">
+            <button class="cards-bottom-buy">Compre Agora</button>
+        </div>
+    </div>
+    <!-- INFO BLOCK -->
+    <div class="info-block">
+        <div class="info-block-content">
+            <img src="img/info.png" alt="icon">
+            <p class="info-block-text"><span>100% DISCREET BILLING: </span> NO MENTION OF SASHA7 OR ANYTHING ADULT WILL APPEAR ON YOUR BILL</p>
+        </div>
+    </div>
+    <!-- FAQ -->
+    <div class="faq-section">
+        <div class="container container-user container-user-lg">
+            <div class="row justify-content-center">
+                <div class="col-md-10">
+                    <div class="text-center mb10">
+                        <h2 class="large fw300">
+                            <u>Perguntas Frequentes</u>
+                        </h2>
+                    </div>
+                    <div class="faq-wrap">
+                        <div class="accordion-faq" id="accordion-faq">
+                            <div class="card">
+                                <div class="card-header" id="faqOne">
+                                    <a href="#collapseOne" class="faq-item collapsed" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="collapseOne">
+                                        <span>Meu pagamento é seguro?</span>
+                                    </a>
+                                </div>
+
+                                <div id="collapseOne" class="collapse" aria-labelledby="faqOne" data-parent="#accordion-faq">
+                                    <div class="card-body">
+                                        <p>
+                                            Sua segurança é nossa prioridade Número 1. Nós usamos um dos mais confiáveis parceiros de pagamento no Brasil para cuidar de todos as informações sensíveis de pagamento. Nosso provedor de pagamento está totalmente conforme com o PCI DSS 3.2 como um provedor
+                                            de serviços nível 1, o que é o mais alto nível de segurança na indústria de pagamentos.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- card -->
+
+                            <div class="card">
+                                <div class="card-header" id="faqTwo">
+                                    <a href="#collapseTwo" class="faq-item collapsed" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="collapseTwo">
+                                        <span>Como as cobranças vão aparecer no meu extrato?</span>
+                                    </a>
+                                </div>
+                                <div id="collapseTwo" class="collapse" aria-labelledby="faqTwo" data-parent="#accordion-faq">
+                                    <div class="card-body">
+                                        <p>
+                                            Sua privacidade é extremamente importante para nós. Você nunca verá nossa marca ou website aparecer no seu extrato ou cartão de crédito. Todos os pagamentos são processados de acordo com uma discrição profissional e aparecem com o código "XYZ".
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="faqThree">
+                                    <a href="#collapseThree" class="faq-item collapsed" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="collapseThree">
+                                        <span>Você vai enviar algo para minha casa ou escritório?</span>
+                                    </a>
+                                </div>
+                                <div id="collapseThree" class="collapse" aria-labelledby="faqThree" data-parent="#accordion-faq">
+                                    <div class="card-body">
+                                        <p>
+                                            Não. Nós nunca vamos enviar nada para sua casa ou escritório. Nós queremos garantir a mais discreta e anônima comunidade possível para você e todos os nossos usuários.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="faqFour">
+                                    <a href="#collapseFour" class="faq-item collapsed" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="collapseFour">
+                                        <span>O que você está fazendo para proteger minha privacidade e anonimáto?</span>
+                                    </a>
+                                </div>
+                                <div id="collapseFour" class="collapse" aria-labelledby="faqFour" data-parent="#accordion-faq">
+                                    <div class="card-body">
+                                        <p>
+                                            Segurança é o ponto número 1 no Sasha7. Nós estamos completamente conformes e estritos com todas as regulações possíveis. Nós usamos criptografia de 256-bit , a mais confiável dos serviços web e SSL para proteger nossos usuários.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- UPDATE SECTION -->
+    <div class="update">
+        <div class="container">
+            <div class="update__body">
+                <p class="update__title">Tudo que você precisa para curta um caso esta noite</p>
+                <div class="update__cards">
+                    <div class="update-card">
+                        <img class="card-gallery" src="img/gallery.png" alt="icon">
+                        <div class="update-card-text">
+                            <p class="update-card-text-title">Acesse Galerias Privadas</p>
+                            <p class="update-card-text-desc">Solicite acesso privado e veja as galerias privadas de qualquer pessoa</p>
+                        </div>
+                        <img class="card-switch" src="img/switch.png" alt="icon">
+                    </div>
+                    <div class="update-card">
+                        <img class="card-gallery" src="img/chat_icon.png" alt="icon">
+                        <div class="update-card-text">
+                            <p class="update-card-text-title">Mensagens ilimitadas</p>
+                            <p class="update-card-text-desc">Envie e responda mensagens</p>
+                        </div>
+                        <img class="card-switch" src="img/switch.png" alt="icon">
+                    </div>
+                    <div class="update-card">
+                        <img class="card-gallery" src="img/ghost_icon.png" alt="icon">
+                        <div class="update-card-text">
+                            <p class="update-card-text-title">Fotos que Desapareçem</p>
+                            <p class="update-card-text-desc">Enviar & receber fotos marcadas para desaparecer em 5 segundos</p>
+                        </div>
+                        <img class="card-switch" src="img/switch.png" alt="icon">
+                    </div>
+                    <div class="update-card">
+                        <img class="card-gallery" src="img/read.png" alt="icon">
+                        <div class="update-card-text">
+                            <p class="update-card-text-title">Leia as Mensagens para a Vida</p>
+                            <p class="update-card-text-desc">Mantenha sua capacidade de ler mensagens enviadas para você. Este recurso termina 1 semana após o registro</p>
+                        </div>
+                        <img class="card-switch" src="img/switch.png" alt="icon">
+                    </div>
+                    <div class="update-card">
+                        <img class="card-gallery" src="img/number1.png" alt="icon">
+                        <div class="update-card-text">
+                            <p class="update-card-text-title">Topo dos Resultados</p>
+                            <p class="update-card-text-desc">Apareça no topo dos resultados de pesquisas e ganhe prioridade de visibilidade para novos membros na sua área</p>
+                        </div>
+                        <img class="card-switch" src="img/switch.png" alt="icon">
+                    </div>
+                    <div class="update-card">
+                        <img class="card-gallery" src="img/mic.png" alt="icon">
+                        <div class="update-card-text">
+                            <p class="update-card-text-title">Aúdios que desaparecem</p>
+                            <p class="update-card-text-desc">Enviar & receber áudios marcados para desaparecer em 5 segundos</p>
+                        </div>
+                        <img class="card-switch" src="img/switch.png" alt="icon">
+                    </div>
+                </div>
+                <div class="update__line"></div>
+                <div class="info_block">
+                    <p class="info-block-question">Precisa de mais assistência?</p>
+                    <a class="info_block_link" href="#">Contate-nos ></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FOOTER -->]
+    <footer class="footer-block">
+        <div class="container">
+            <p>Ao clicar no botão "Confirmar pagamento" confirma que recebe acesso instantâneo ao nosso serviço, renunciando por isso ao seu direito de rescisão.</p>
+            <p>Os nossos Termos Gerais também se aplicam a cancelamento e proteção de dados </p>
+            <p>Após o seu período de afiliação inicial, a sua subscrição será renovada automaticamente pelo mesmo valor e tipo de pacote até cancelar através da sua página de detalhes de afiliação. Ao subscrever, autoriza-nos a debitar do seu cartão agora
+                e no momento de cada renovação. A afiliação de 2 dias tem condições especiais, clique aqui para Saber mais.</p>
+
+        </div>
+    </footer>
+    <!-- Slick Slider -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

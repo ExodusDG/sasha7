@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>join | Sasha7</title>
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="overflow-x: hidden; padding-top: 0rem;">
+
+    <section class="join">
+        <div class="join-container">
+            <!-- STEP 1 -->
+            <div class="step-1">
+                <div class="join__body">
+                    <p class="join__step-counter">1/4</p>
+                    <img class="join__logotype" src="join/logotype.png" alt="Logotype">
+                    <p class="join__text_text">Vamos configurar o seu perfil!</p>
+                    <div class="join_block join__gender">
+                        <p class="join__gender_title">Qual seu gênero?</p>
+                        <div class="join_buttons buttons_gender">
+                            <button class="join_button join_button-active">Homem</button>
+                            <button class="join_button">Mulher</button>
+                        </div>
+                    </div>
+                    <div class="join_block join__status">
+                        <p class="join__gender_title">Qual o seu status de relacionamento?</p>
+                        <div class="join_buttons buttons_status">
+                            <button class="join_button">Comprometido</button>
+                            <button class="join_button join_button-active">Solteito</button>
+                        </div>
+                    </div>
+                    <div class="join_block join__interes">
+                        <p class="join__gender_title">No que você está interessado(a)?</p>
+                        <div class="join_buttons buttons_interes">
+                            <button class="join_button">Homens</button>
+                            <button class="join_button">Mulheres</button>
+                            <button class="join_button">Ambos</button>
+                        </div>
+                    </div>
+                    <button class="join_continue_button">Continuar</button>
+                </div>
+            </div>
+            <!-- STEP 2 -->
+            <div class="step-2" style="display: none;">
+                <div class="join__body">
+                    <div style="display:flex;justify-content: space-between; align-items: center;">
+                        <a href="#">←</a>
+                        <p class="join__step-counter">2/4</p>
+                    </div>
+
+                    <img class="join__logotype" src="join/logotype.png" alt="Logotype">
+                    <div class="join_block">
+                        <p class="join__gender_title">Qual é o seu endereço de e-mail?</p>
+                        <input class="join__input" type="email" name="e-mail" id="join_input_email" placeholder="Usamos isso para verificar seu e-mail">
+                        <div class="email__choise">
+                            <button class="email__choise_button">@gmail.com</button>
+                            <button class="email__choise_button">@uol.com.br</button>
+                            <button class="email__choise_button">@outlook.com</button>
+                            <button class="email__choise_button">@freemail.com</button>
+                        </div>
+                    </div>
+                    <div class="join_block">
+                        <p class="join__gender_title">Digite seu nome de usuário desejado?</p>
+                        <input class="join__input" type="text" name="text" id="join_input_email" placeholder="Escolha um nome descritivo, como Advogado Curioso">
+                    </div>
+                    <div class="join_block">
+                        <p class="join__gender_title">Em que cidade você vive?</p>
+                        <input class="join__input" type="text" name="text" id="join_input_email" placeholder="Cidade">
+                    </div>
+                    <button class="join_continue_button">Continuar</button>
+                </div>
+            </div>
+            <!-- STEP 3 -->
+            <div class="step-3" style="display: none;">
+                <div class="join__body">
+                    <div style="display:flex;justify-content: space-between; align-items: center;">
+                        <a href="#">←</a>
+                        <p class="join__step-counter">3/4</p>
+                    </div>
+
+                    <img class="join__logotype" src="join/logotype.png" alt="Logotype">
+                    <div class="join_block">
+                        <p class="join__gender_title">Em que ano você nasceu?</p>
+                        <input class="join__input" type="text" name="text" id="join_input_email" placeholder="Digite o número">
+                    </div>
+                    <div class="join_block">
+                        <p class="join__gender_title">Digite seu nome de usuário desejado?</p>
+                        <input class="join__input" type="password" name="password" id="join_input_email" placeholder="Digite a senha">
+                    </div>
+                    <button class="join_continue_button">Continuar</button>
+                </div>
+            </div>
+            <!-- STEP 4 -->
+            <div class="step-4" style="display: none;">
+                <div class="join__body">
+                    <div style="display:flex;justify-content: space-between; align-items: center;">
+                        <a href="#">←</a>
+                        <p class="join__step-counter">4/4</p>
+                    </div>
+
+                    <img class="join__logotype" src="join/logotype.png" alt="Logotype">
+                    <p class="join__text_text">Um último passo!</p>
+                    <div class="join_block">
+                        <p class="join__gender_title">Qual seu biotipo?</p>
+                        <select>
+                            <option>Selecione um tipo de corpo</option>
+                            <option>Magrelo</option>
+                            <option>Em forma</option>
+                            <option>Médio</option>
+                            <option>Curvilíneo</option>
+                            <option>Um pouco acima do peso</option>
+                            <option>Musculoso</option>
+                          </select>
+                    </div>
+                    <div class="join_block">
+                        <p class="join__gender_title">Qual é a sua altura?</p>
+                        <input class="join__input input_height" type="text" name="text"><span style="color: #aaa;">(cm)</span>
+                    </div>
+                    <p class="join__gender_title">Apresente-se</p>
+                    <div class="join_block">
+                        <p class="join__gender_title join__text_small">O que você está procurando? O que te trouxe ao site? O que você acha atraente em um parceiro(a)?</p>
+                        <textarea class="join__input input-introduce" type="text" name="text"></textarea>
+                    </div>
+                    <button class="join_continue_button">Continuar</button>
+                </div>
+            </div>
+            <!-- AVATAR -->
+            <div class="avatar-block" style="display: none;">
+                <div class="join__body">
+                    <div style="display:flex;justify-content: space-between; align-items: center;">
+                        <a href="#">←</a>
+                    </div>
+
+                    <img class="join__logotype" src="join/logotype.png" alt="Logotype">
+                    <p class="join__text_text">E agora a parte divertida!</p>
+                    <button class="join_continue_button">Carregue Uma Foto</button>
+
+                    <div class="avatar__block">
+                        <p class="avatar__block_text">Dica</p>
+                        <p class="avatar__block_desc">Cortar, mascarar, ou borrar fotos e ficar <span>discreto e anonimo. </span> </p>
+                        <p class="avatar__block_example"> ÓTIMOS EXEMPLOS DE FOTOS DE PERFIS DISCRETAS</span>
+                        </p>
+                    </div>
+                    <div class="avatar__block avatar_slider">
+                        <img src="join/m1.jpg" alt="Image">
+                        <img src="join/m2.jpg" alt="Image">
+                        <img src="join/m4.jpg" alt="Image">
+                    </div>
+                    <a href="#">
+                        <p>Pular > </p>
+                    </a>
+                </div>
+            </div>
+            <!-- SKIP -->
+            <div class="skip-block" style="display: none;">
+                <div class="join__body">
+
+                    <img class="join__logotype" src="join/logotype.png" alt="Logotype">
+
+                    <p class="skip_title">Você tem certeza que deseja pular?</p>
+                    <p class="skip__text">Perfis com fotos recebem 600% mais visualizações!</p>
+                    <p class="skip_text">Você pode carregar fotos em sua <span>galeria privada.</span></p>
+                    <p class="skip_text">As fotos só ficarão visíveis para pessoa que você conceder acesso. Revogue o acesso a qualquer momento.</p>
+                    <p class="skip_text">Você pode revogar o acesso à qualquer hora.</p>
+                    <button class="join_continue_button" style="margin-bottom: 20px;">Carregar para sua galeria de fotos privada</button>
+                    <a href="#">
+                        <p>Pular > </p>
+                    </a>
+                </div>
+            </div>
+            <!-- confirm -->
+            <div class="confirm-block" style="display: none;">
+                <div class="join__body">
+
+                    <img class="join__logotype" src="join/logotype.png" alt="Logotype">
+
+                    <p class="confirm_title">Você Terminou!</p>
+                    <p class="confirm_title">Apenas confirme seu endereço de e-mail</p>
+                    <p class="confirm_title">Click the link in the confirmation email we sent to </p>
+                    <p class="confirm_title" style="color: blue; font-weight: 400;">test@gmail.com</p>
+                    <p class="confirm_title">Ainda não recebeu um e-mail de confirmação? </p>
+                    <div class="confirm-block-buttons">
+                        <button>Reenviar</button>
+                        <button>Mude o e-mail</button>
+                    </div>
+                    <p class="confirm_title"><span>Dica:</span> verifique sua pasta de spam ou lixo</p>
+                    <button class="join_continue_button" style="margin-bottom: 20px;">Pular ></button>
+                    <a href="#">
+                        <p>Vou fazer isso mais tarde > </p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Slick Slider -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

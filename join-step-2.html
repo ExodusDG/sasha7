@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>join | Sasha7</title>
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="overflow-x: hidden; padding-top: 0rem;">
+
+    <section class="join">
+        <div class="join-container">
+            <!-- STEP 2 -->
+            <div class="step-2">
+                <div class="join__body">
+                    <div style="display:flex;justify-content: space-between;align-items: center;width: 90%;margin: 0 auto;">
+                        <a href="#"><img class="img__back" src="join/back.png" alt=""></a>
+                        <p class="join__step-counter">2/4</p>
+                    </div>
+
+                    <img class="join__logotype" src="join/logotype.png" alt="Logotype">
+                    <div class="join_block">
+                        <p class="join__gender_title">Qual é o seu endereço de e-mail?</p>
+                        <input oninput="buttonUpdate()" class="join__input" type="email" name="e-mail" id="join_input_email" placeholder="Usamos isso para verificar seu e-mail">
+                        <div class="email__choise">
+                            <button class="email__choise_button">@gmail.com</button>
+                            <button class="email__choise_button">@uol.com.br</button>
+                            <button class="email__choise_button">@outlook.com</button>
+                            <button class="email__choise_button">@freemail.com</button>
+                        </div>
+                    </div>
+                    <div class="join_block">
+                        <p class="join__gender_title">Digite seu nome de usuário desejado?</p>
+                        <input oninput="buttonUpdate()" class="join__input" type="text" name="text" id="step-2-input-2" placeholder="Escolha um nome descritivo, como Advogado Curioso">
+                    </div>
+                    <div class="join_block">
+                        <p class="join__gender_title ">Em que cidade você vive?</p>
+                        <input oninput="buttonUpdate()" class="join__input" type="text" name="text" id="step-2-input-3" placeholder="Cidade">
+                    </div>
+                    <button class="join_continue_button" id="step-2-button" style="opacity: 0.5;">Continuar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Slick Slider -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        var input1 = $('#join_input_email')
+        var input2 = $('#step-2-input-2')
+        var input3 = $('#step-2-input-3')
+
+        function buttonUpdate() {
+            if (input1.val().length > 1 && input2.val().length > 1 && input3.val().length > 1) {
+                $('#step-2-button').attr('style', 'opacity:1;')
+            }
+        }
+    </script>
+</body>
+
+</html>

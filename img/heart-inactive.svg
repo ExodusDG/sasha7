@@ -1,0 +1,48 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+	<title>heart - inactive</title>
+	<defs>
+		<linearGradient id="grd1" gradientUnits="userSpaceOnUse"  x1="256" y1="471.007" x2="256" y2="41.019">
+			<stop offset="0" stop-color="#808080"  />
+			<stop offset="1" stop-color="#858585"  />
+		</linearGradient>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: url(#grd1) } 
+	</style>
+	<g id="Layer">
+		<g id="Layer">
+			<path id="Layer" fill-rule="evenodd" class="shp0" d="M512 177.88C512 214.52 496.93 249.02 469.58 275.04L268.37 466.07C264.9 469.36 260.45 471.01 256 471.01C251.55 471.01 247.09 469.37 243.63 466.07L42.41 275.04C15.06 249.01 0 214.52 0 177.87C0 141.24 15.06 106.74 42.41 80.72C98.11 27.75 188.73 27.75 244.43 80.72L256 91.72L267.58 80.72C323.28 27.75 413.91 27.75 469.58 80.73C496.93 106.75 512 141.24 512 177.88ZM476.07 177.88C476.07 151.18 464.97 125.93 444.82 106.76C402.78 66.77 334.37 66.77 292.33 106.76L268.37 129.52C261.44 136.12 250.56 136.12 243.62 129.52L219.67 106.77C198.65 86.77 171.03 76.77 143.41 76.77C115.8 76.77 88.2 86.76 67.18 106.76C47.03 125.92 35.93 151.18 35.93 177.88C35.93 204.58 47.03 229.84 67.18 249L256 428.27L444.83 248.99C464.97 229.83 476.07 204.58 476.07 177.88Z" />
+		</g>
+	</g>
+	<g id="Layer">
+	</g>
+	<g id="Layer">
+	</g>
+	<g id="Layer">
+	</g>
+	<g id="Layer">
+	</g>
+	<g id="Layer">
+	</g>
+	<g id="Layer">
+	</g>
+	<g id="Layer">
+	</g>
+	<g id="Layer">
+	</g>
+	<g id="Layer">
+	</g>
+	<g id="Layer">
+	</g>
+	<g id="Layer">
+	</g>
+	<g id="Layer">
+	</g>
+	<g id="Layer">
+	</g>
+	<g id="Layer">
+	</g>
+	<g id="Layer">
+	</g>
+</svg>

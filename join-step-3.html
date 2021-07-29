@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>join | Sasha7</title>
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="overflow-x: hidden; padding-top: 0rem;">
+
+    <section class="join">
+        <div class="join-container">
+            <!-- STEP 3 -->
+            <div class="step-3">
+                <div class="join__body">
+                    <div style="display:flex;justify-content: space-between;align-items: center;width: 90%;margin: 0 auto;">
+                        <a href="#"><img class="img__back" src="join/back.png" alt=""></a>
+                        <p class="join__step-counter">3/4</p>
+                    </div>
+
+                    <img class="join__logotype" src="join/logotype.png" alt="Logotype">
+                    <div class="join_block">
+                        <p class="join__gender_title">Em que ano você nasceu?</p>
+                        <input oninput="buttonUpdate()" class="join__input" type="text" name="text" id="step-3-input-1" placeholder="Digite o número">
+                    </div>
+                    <div class="join_block">
+                        <p class="join__gender_title">Digite seu nome de usuário desejado?</p>
+                        <div class="join__password">
+                            <input oninput="buttonUpdate()" class="join__input" type="password" name="password" id="step-3-input-2" placeholder="Digite a senha">
+                            <div class="show__password"><span>Revelar</span></div>
+                        </div>
+
+                        <div class="password-level">
+                            <span>Segurança de senha</span>
+                            <div class="password-level-status" id="pswd-lvl-1"></div>
+                            <div class="password-level-status" id="pswd-lvl-2"></div>
+                            <div class="password-level-status" id="pswd-lvl-3"></div>
+                            <div class="password-level-status" id="pswd-lvl-4"></div>
+                        </div>
+                    </div>
+                    <button class="join_continue_button" id="step-3-button" style="opacity: 0.5;">Continuar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Slick Slider -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="js/jquery.passtrength.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        $(document).ready(function($) {
+            $('#step-3-input-2').passtrength({
+                minChars: 4,
+                passwordToggle: true,
+                tooltip: true
+            });
+        });
+
+        var input1 = $('#step-3-input-1')
+        var input2 = $('#step-3-input-2')
+
+
+        if ($('#step-3-input-2').val().length == 0) {
+            $('.password-level-status').attr('style', 'background: #aaa')
+        }
+
+        function buttonUpdate() {
+            if (input1.val().length > 1 && input2.val().length > 1) {
+                $('#step-3-button').attr('style', 'opacity:1;')
+            } else if ($('#step-3-input-2').val().length == 0) {
+                $('.password-level-status').attr('style', 'background: #aaa')
+
+            }
+        }
+        var passVisible = false;
+        $('.show__password').click(function() {
+            if (passVisible == true) {
+                $('#step-3-input-2').attr('type', 'password')
+                passVisible = false;
+            } else {
+                $('#step-3-input-2').attr('type', 'text')
+                passVisible = true;
+            }
+        })
+    </script>
+</body>
+
+</html>

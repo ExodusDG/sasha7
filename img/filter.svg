@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 478 478" width="478" height="478">
+	<defs>
+		<linearGradient id="grd1" gradientUnits="userSpaceOnUse"  x1="238.934" y1="307.2" x2="238.934" y2="170.667">
+			<stop offset="0" stop-color="#af75c2"  />
+			<stop offset="1" stop-color="#e06385"  />
+		</linearGradient>
+		<linearGradient id="grd2" gradientUnits="userSpaceOnUse"  x1="238.934" y1="136.534" x2="238.934" y2="0">
+			<stop offset="0" stop-color="#af75c2"  />
+			<stop offset="1" stop-color="#e06385"  />
+		</linearGradient>
+		<linearGradient id="grd3" gradientUnits="userSpaceOnUse"  x1="238.934" y1="477.867" x2="238.934" y2="341.334">
+			<stop offset="0" stop-color="#af75c2"  />
+			<stop offset="1" stop-color="#e06385"  />
+		</linearGradient>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: url(#grd1) } 
+		.shp1 { fill: url(#grd2) } 
+		.shp2 { fill: url(#grd3) } 
+	</style>
+	<g id="Layer">
+		<g id="Layer">
+			<path id="Layer" class="shp0" d="M460.8 221.87L185.31 221.87C176.06 185.5 139.07 163.53 102.71 172.78C78.59 178.92 59.76 197.75 53.62 221.87L17.07 221.87C7.64 221.87 0 229.51 0 238.93C0 248.36 7.64 256 17.07 256L53.62 256C62.88 292.36 99.86 314.34 136.23 305.08C160.34 298.95 179.17 280.12 185.31 256L460.8 256C470.23 256 477.87 248.36 477.87 238.93C477.87 229.51 470.23 221.87 460.8 221.87Z" />
+		</g>
+	</g>
+	<g id="Layer">
+		<g id="Layer">
+			<path id="Layer" class="shp1" d="M460.8 51.2L407.18 51.2C397.92 14.84 360.94 -7.14 324.58 2.12C300.46 8.25 281.63 27.08 275.49 51.2L17.07 51.2C7.64 51.2 0 58.84 0 68.27C0 77.69 7.64 85.33 17.07 85.33L275.49 85.33C284.75 121.7 321.73 143.67 358.09 134.42C382.21 128.28 401.04 109.45 407.18 85.33L460.8 85.33C470.23 85.33 477.87 77.69 477.87 68.27C477.87 58.84 470.23 51.2 460.8 51.2Z" />
+		</g>
+	</g>
+	<g id="Layer">
+		<g id="Layer">
+			<path id="Layer" class="shp2" d="M460.8 392.53L373.04 392.53C363.79 356.17 326.81 334.19 290.44 343.45C266.33 349.59 247.49 368.42 241.36 392.53L17.07 392.53C7.64 392.53 0 400.18 0 409.6C0 419.03 7.64 426.67 17.07 426.67L241.36 426.67C250.61 463.03 287.59 485.01 323.96 475.75C348.07 469.61 366.91 450.78 373.04 426.67L460.8 426.67C470.23 426.67 477.87 419.03 477.87 409.6C477.87 400.17 470.23 392.53 460.8 392.53Z" />
+		</g>
+	</g>
+	<g id="Layer">
+	</g>
+	<g id="Layer">
+	</g>
+	<g id="Layer">
+	</g>
+	<g id="Layer">
+	</g>
+	<g id="Layer">
+	</g>
+	<g id="Layer">
+	</g>
+	<g id="Layer">
+	</g>
+	<g id="Layer">
+	</g>
+	<g id="Layer">
+	</g>
+	<g id="Layer">
+	</g>
+	<g id="Layer">
+	</g>
+	<g id="Layer">
+	</g>
+	<g id="Layer">
+	</g>
+	<g id="Layer">
+	</g>
+	<g id="Layer">
+	</g>
+</svg>
