@@ -1,0 +1,48 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 514 514" width="514" height="514">
+	<title>search inactive</title>
+	<defs>
+		<linearGradient id="grd1" gradientUnits="userSpaceOnUse"  x1="256.634" y1="513.267" x2="256.634" y2="0">
+			<stop offset="0.01" stop-color="#808080"  />
+			<stop offset="1" stop-color="#858585"  />
+		</linearGradient>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: url(#grd1) } 
+	</style>
+	<g id="Layer">
+		<g id="Layer">
+			<path id="Layer" fill-rule="evenodd" class="shp0" d="M495.04 494.08C469.44 519.68 431.04 519.68 405.44 494.08L320.96 409.6C290.24 424.96 254.4 435.2 218.56 435.2C98.24 435.2 0.96 337.92 0.96 217.6C0.96 97.28 98.24 0 218.56 0C338.88 0 436.16 97.28 436.16 217.6C436.16 253.44 425.92 289.28 410.56 320L495.04 404.48C518.08 430.08 518.08 468.48 495.04 494.08ZM384.96 217.6C384.96 125.44 310.72 51.2 218.56 51.2C126.4 51.2 52.16 125.44 52.16 217.6C52.16 309.76 126.4 384 218.56 384C310.72 384 384.96 309.76 384.96 217.6Z" />
+		</g>
+	</g>
+	<g id="Layer">
+	</g>
+	<g id="Layer">
+	</g>
+	<g id="Layer">
+	</g>
+	<g id="Layer">
+	</g>
+	<g id="Layer">
+	</g>
+	<g id="Layer">
+	</g>
+	<g id="Layer">
+	</g>
+	<g id="Layer">
+	</g>
+	<g id="Layer">
+	</g>
+	<g id="Layer">
+	</g>
+	<g id="Layer">
+	</g>
+	<g id="Layer">
+	</g>
+	<g id="Layer">
+	</g>
+	<g id="Layer">
+	</g>
+	<g id="Layer">
+	</g>
+</svg>
