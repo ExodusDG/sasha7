@@ -1,4 +1,36 @@
 $(document).ready(function() {
+    /* CUSTOM CAROUSEL */
+    var slideWidth = $('.slider-carousel-slide').width();
+    var sliderWrapper = $('.slider__wrapper');
+    var maxWrapperTranslate = slideWidth * ($('.slider__wrapper > div').length - 1);
+    console.log(maxWrapperTranslate)
+    setInterval(() => {
+        slideActive()
+    }, 5000);
+    var currentActiveDot = 2;
+
+    function slideActive() {
+
+        var currentTranslate = Number($('.slider__wrapper').attr('style').replace('transform: translateX(-', '').replace('px);', ''));
+        var slideScrollWidth = Number(slideWidth * (currentActiveDot - 1));
+        sliderWrapper.attr('style', 'transform: translateX(' + (slideScrollWidth * -1) + 'px);')
+
+        if (currentTranslate == maxWrapperTranslate) {
+            sliderWrapper.attr('style', 'transform: translateX(-0px);')
+        }
+        $('.slide-dot').removeClass('slide-dot-active');
+        $('#dot' + currentActiveDot).addClass('slide-dot-active');
+
+        if (currentActiveDot == 6) {
+            currentActiveDot = 1;
+        } else {
+            currentActiveDot++
+        }
+
+    }
+
+    /* END */
+
     var question1 = $('#question-1 button');
     var question2 = $('#question-2 button');
     var question3 = $('#question-3 button');
@@ -42,10 +74,7 @@ $(document).ready(function() {
         $('.buttons_interes > button').removeClass('join_button-active')
         $(this).addClass('join_button-active')
     })
-    $('.slider-carousel').slick({
-        dots: true,
-        autoplay: true
-    });
+
     $('.step-1 .join_button').click(function() {
         if (question1.hasClass('join_button-active') && question2.hasClass('join_button-active') && question3.hasClass('join_button-active')) {
             $('#step-1-button').attr('style', 'opacity:1;')
@@ -87,10 +116,12 @@ $('.tariff-card').click(function() {
     $('.tariff-card-mounth').removeClass('tariff-card-mounth-active')
     $('.tariff-card-adv').removeClass('tariff-card-adv-active')
     $('.tariff-card-discount').removeClass('card-gradient-discount-active')
+    $('.tariff-card-period').css('color', '#b0b0b0')
 
     $(this).addClass('tariff-card-active')
     $(this).find('.tariff-card-mounth-count').addClass('tariff-card-mounth-count-active')
     $(this).find('.tariff-card-mounth').addClass('tariff-card-mounth-active')
     $(this).find('.tariff-card-adv').addClass('tariff-card-adv-active')
     $(this).find('.tariff-card-discount').addClass('card-gradient-discount-active')
+    $(this).find('.tariff-card-period').css('color', 'black')
 })
