@@ -1,33 +1,12 @@
 $(document).ready(function() {
-    /* CUSTOM CAROUSEL */
-    var slideWidth = $('.slider-carousel-slide').width();
-    var sliderWrapper = $('.slider__wrapper');
-    var maxWrapperTranslate = slideWidth * ($('.slider__wrapper > div').length - 1);
-    console.log(maxWrapperTranslate)
-    setInterval(() => {
-        slideActive()
-    }, 5000);
-    var currentActiveDot = 2;
+    $('.carousel').carousel({
+        interval: 5000
+    })
 
-    function slideActive() {
-
-        var currentTranslate = Number($('.slider__wrapper').attr('style').replace('transform: translateX(-', '').replace('px);', ''));
-        var slideScrollWidth = Number(slideWidth * (currentActiveDot - 1));
-        sliderWrapper.attr('style', 'transform: translateX(' + (slideScrollWidth * -1) + 'px);')
-
-        if (currentTranslate == maxWrapperTranslate) {
-            sliderWrapper.attr('style', 'transform: translateX(-0px);')
-        }
-        $('.slide-dot').removeClass('slide-dot-active');
-        $('#dot' + currentActiveDot).addClass('slide-dot-active');
-
-        if (currentActiveDot == 6) {
-            currentActiveDot = 1;
-        } else {
-            currentActiveDot++
-        }
-
-    }
+    $('.card-header').click(function() {
+        var number = $(this).attr('id').replace('faq', '');
+        $('#collapse' + number).toggleClass('show');
+    })
 
     /* END */
 
@@ -46,12 +25,6 @@ $(document).ready(function() {
         var typedUsername = $('#join_input_email').val()
         $('#join_input_email').val(typedUsername + currentClickedMail)
     })
-
-
-    $('.avatar_slider').slick({
-        dots: true,
-        autoplay: true
-    });
 
     $('.email__choise').on("mousewheel", function(e, delta) {
         this.scrollLeft -= (delta);
