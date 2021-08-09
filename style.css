@@ -711,11 +711,11 @@
 }
 
 .tariff-card-mounth-count-active {
-    color: black !important;
+    color: #4C4C4C !important;
 }
 
 .tariff-card-mounth-active {
-    color: black !important;
+    color: #4C4C4C !important;
 }
 
 .tariff-card-adv-active {
@@ -740,7 +740,7 @@
 .tariff-card-adv {
     width: 100%;
     height: 61px;
-    border-radius: 10px;
+    border-radius: 7px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
     border: 0px solid #b0b0b0;
@@ -864,11 +864,44 @@
     width: 100%;
 }
 
+.accordion-faq p {
+    padding-left: 0px !important;
+    color: #b0b0b0 !important;
+}
+
 .faq-item {
     display: flex !important;
     color: black !important;
     align-items: center;
     justify-content: space-between !important;
+}
+
+.card-body {
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1.5rem;
+    padding-left: 0px;
+}
+
+.slider-carousel-icon img {
+    width: 35px;
+    margin-top: 12px;
+}
+
+.navbar-collapse.in {
+    display: block !important;
+}
+
+.carousel-indicators {
+    top: 170px;
+    position: absolute;
+    list-style: none;
+    left: calc((100% - 140px)/3);
+}
+
+.carousel {
+    position: relative;
+    top: 50px;
 }
 
 .card-header {
@@ -1238,9 +1271,6 @@
     .join_continue_button {
         font-size: 16px;
     }
-    .tariff-card-active {
-        transform: translateY(-40px) scale(1) !important;
-    }
     .tariff-card {
         height: 300px;
     }
@@ -1263,9 +1293,24 @@
         left: 27%;
     }
     .tariff-card-active {
-        width: 300px;
-        transform: translateY(-40px) scale(1) !important;
+        width: 140px;
+        transform: translateY(-40px) scale(1.1) !important;
         position: relative;
+    }
+    .tariff-card {
+        width: 140px;
+    }
+    .carousel-indicators {
+        top: 210px;
+        position: absolute;
+        list-style: none;
+        left: calc((100% - 140px)/3);
+    }
+    .tariff-card-adv {
+        width: 101%;
+        left: -0.5%;
+        text-align: center;
+        transition: 0.3s;
     }
 }
 
