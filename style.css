@@ -573,6 +573,12 @@
 
 /*END*/
 
+.faq-item span {
+    position: relative;
+    z-index: 0;
+    padding-left: 0px;
+}
+
 
 /* SLIDER */
 
@@ -867,6 +873,8 @@
 
 .card-header {
     padding: 1rem 1.5rem;
+    padding-left: 0px;
+    padding-right: 0px;
     margin-bottom: 0;
     background-color: transparent;
     border-bottom: 0px solid black;
